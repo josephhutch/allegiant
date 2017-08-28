@@ -128,7 +128,7 @@ select,
 textarea {
     font-family: Lato, Avenir, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #3A3B3C;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.125rem;
     line-height: 1.5;
     margin: 0;
@@ -181,7 +181,7 @@ h2,
 h2 a,
 h3,
 h3 a {
-    font-weight: 400
+    font-weight: 600
 }
 b,
 strong {
@@ -268,7 +268,16 @@ code {
 }
 article p {
     margin: 1.5rem 0;
+    word-spacing: 0.01rem;
     color: inherit
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 2rem 0 0 0;
 }
 #content {
     width: 700px;
