@@ -260,15 +260,6 @@ a.moretag:visited {
 a.moretag:hover {
     text-decoration: underline
 }
-.smallcode {
-    font-family: monospace;
-    padding: .25em .5em;
-    font-size: inherit;
-    border-radius: 3px;
-    background-color: #e5e5e5;
-    white-space: nowrap;
-    color: #c7254e
-}
 code {
     font-family: monospace;
     padding: .2em .5em;
