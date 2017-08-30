@@ -576,6 +576,9 @@ ul,
 ol {
      padding-left: 35px 
 }
+li > p {
+    margin: 0;
+}
 table {
     color: #3A3B3C;
     border-collapse: collapse;
@@ -642,7 +645,13 @@ tr:nth-child(even) td {
     #nav-below {
         margin-bottom: 30px;
     }
-    article p {
+    article p,
+    article > ul,
+    article > ol,
+    article > table {
         font-size: .95em;
+    }
+    li > p {
+        font-size: 1em;
     }
 }
