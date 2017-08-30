@@ -580,7 +580,8 @@ li > p {
 table {
     color: #3A3B3C;
     border-collapse: collapse;
-    border-spacing: 0
+    border-spacing: 0;
+    margin: 1.5rem 0;
 }
 td,
 th {
