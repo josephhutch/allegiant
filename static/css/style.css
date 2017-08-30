@@ -588,7 +588,8 @@ th {
     border: 1px solid #D1D1D1
 }
 th {
-    font-weight: bold
+    font-family: 'LatoLatinWebHeavy';
+    font-weight: normal
 }
 tr:nth-child(even) td {
     background: #f3f3f3;
