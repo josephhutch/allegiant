@@ -21,8 +21,7 @@ footer {
 #mainmenu li,
 #site-title,
 .lower label,
-.overlay ul li a,
-strong {
+.overlay ul li a {
     text-transform: uppercase
 }
 #copyright,
@@ -123,9 +122,8 @@ button,
 input,
 select,
 textarea {
-    font-family: Lato, Avenir, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: 'LatoLatinWeb', Avenir, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #3A3B3C;
-    font-weight: 400;
     font-size: 1.125rem;
     line-height: 1.5;
     margin: 0;
@@ -174,11 +172,12 @@ h2,
 h2 a,
 h3,
 h3 a {
-    font-weight: 600
+    font-weight: bold
 }
 b,
 strong {
-    font-weight: 400
+    font-family: 'LatoLatinWebHeavy';
+    font-weight: normal
 }
 h1 {
     font-size: 2.2em
@@ -228,7 +227,7 @@ hr {
     font-size: .778em
 }
 a.moretag {
-    font-weight: 400
+    font-weight: normal
 }
 a.moretag,
 a.moretag:visited {
@@ -248,11 +247,10 @@ code {
 #branding,
 #mainmenu li,
 #site-title a {
-    font-family: Lato, Avenir, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+    font-family: 'LatoLatinWeb', Avenir, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
 }
 article p {
     margin: 1.5rem 0;
-    word-spacing: 0.03rem;
     color: inherit
 }
 h1,
@@ -290,12 +288,12 @@ footer {
 footer .menu-item a {
     color: #7A7B7C;
     text-decoration: none;
-    font-weight: 300
+    font-family: 'LatoLatinWebLight'
 }
 #mainmenu li,
 #nav-below a {
     display: inline-block;
-    font-weight: 400;
+    font-weight: normal;
     cursor: pointer
 }
 footer .menu-item a:hover {
@@ -393,7 +391,7 @@ footer .menu-item a:hover {
 }
 .post-heading h1 {
     font-size: 2.2em;
-    font-weight: 400;
+    font-weight: normal;
     color: #fff;
     display: table-cell;
     vertical-align: middle
@@ -443,7 +441,7 @@ article img {
     padding: 0 .85em;
     border-radius: 30px;
     color: #fff;
-    font-weight: 400;
+    font-weight: normal;
     line-height: 25px
 }
 .lower:hover {
@@ -493,7 +491,7 @@ article img {
     min-height: 54px
 }
 .overlay ul li a {
-    font-weight: 300;
+    font-family: 'LatoLatinWebLight';
     display: block;
     color: #fff;
     -webkit-transition: color .05s;
