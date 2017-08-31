@@ -21,7 +21,7 @@
         <div id="site-title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></div>
         <nav id="mainmenu">
           <ul>
-            <li><a href="{{ .Site.BaseURL }}">Articles</a></li>
+            <li><a href="{{ .Site.BaseURL }}">Blog</a></li>
             {{ with .Site.Params.github }}<li><a href="{{ . }}" target="_blank">Github</a></li>{{ end }}
             {{ with .Site.Params.twitter }}<li><a href="{{ . }}" target="_blank">Twitter</a></li>{{ end }}
             {{ with .Site.Params.linkedin }}<li><a href="{{ . }}" target="_blank">LinkedIn</a></li>{{ end }}
@@ -35,7 +35,7 @@
           <label for="op"></label>
           <nav id="menu" role="navigation">
             <ul>
-            <li><a href="{{ .Site.BaseURL }}">Articles</a></li>
+            <li><a href="{{ .Site.BaseURL }}">Blog</a></li>
             {{ with .Site.Params.github }}<li><a href="{{ . }}" target="_blank">Github</a></li>{{ end }}
             {{ with .Site.Params.twitter }}<li><a href="{{ . }}" target="_blank">Twitter</a></li>{{ end }}
             {{ with .Site.Params.linkedin }}<li><a href="{{ . }}" target="_blank">LinkedIn</a></li>{{ end }}
@@ -45,7 +45,7 @@
         <div class="clearfix"></div>
       </section>
       <div class="post-heading">
-        <h1>{{ if and ($.IsNode) (eq $.Section "") }} Articles {{ else }}
+        <h1>{{ if and ($.IsNode) (eq $.Section "") }} Blog {{ else }}
         {{ .Title }}
           <div class="share-icons-header">
             <a href="http://www.twitter.com/share?url={{ .Permalink }}" target="_blank">
