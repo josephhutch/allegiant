@@ -431,9 +431,6 @@ img {
     width: 100%;
     height: auto
 }
-article img {
-    box-shadow: 0 0 15px rgba(0, 0, 0, .35)
-}
 .lower {
     float: right;
     margin-top: 28px;
