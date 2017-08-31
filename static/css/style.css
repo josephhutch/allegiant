@@ -24,7 +24,6 @@ footer {
 .overlay ul li a {
     text-transform: uppercase
 }
-#copyright,
 #nav-below,
 #nav-below a,
 .footer-column,
@@ -84,6 +83,7 @@ li,
 mark,
 menu,
 nav,
+nav > ul,
 object,
 output,
 p,
@@ -560,12 +560,10 @@ img {
     margin-right: 5px
 }
 #copyright {
-    width: 100%;
+    margin: 5px;
     color: #7A7B7C;
     font-family: inherit;
-    font-size: .65em;
-    margin-top: 40px;
-    padding-bottom: 40px
+    font-size: .65em
 }
 ul,
 ol {
@@ -577,7 +575,8 @@ li > p {
 table {
     color: #3A3B3C;
     border-collapse: collapse;
-    border-spacing: 0
+    border-spacing: 0;
+    margin: 1.5rem 0;
 }
 td,
 th {
