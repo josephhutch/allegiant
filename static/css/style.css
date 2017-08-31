@@ -24,7 +24,6 @@ footer {
 .overlay ul li a {
     text-transform: uppercase
 }
-#copyright,
 #nav-below,
 #nav-below a,
 .footer-column,
@@ -564,12 +563,10 @@ article img {
     margin-right: 5px
 }
 #copyright {
-    width: 100%;
+    margin: 5px;
     color: #7A7B7C;
     font-family: inherit;
-    font-size: .65em;
-    margin-top: 40px;
-    padding-bottom: 40px
+    font-size: .65em
 }
 ul,
 ol {
