@@ -227,15 +227,13 @@ hr {
     font-size: .778em
 }
 a.moretag {
-    font-weight: normal
-}
-a.moretag,
-a.moretag:visited {
+    border-radius: 999em;
+    border: 1px solid #009DDC;
     color: #009DDC;
-    border-bottom: 1px solid transparent
-}
-a.moretag:hover {
-    text-decoration: underline
+    padding: 2px .8em;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
 }
 code {
     font-family: monospace;
@@ -391,7 +389,7 @@ footer .menu-item a:hover {
 }
 .post-heading h1 {
     font-size: 2.2em;
-    font-weight: normal;
+    font-family: 'LatoLatinWebHeavy';
     color: #fff;
     display: table-cell;
     vertical-align: middle
