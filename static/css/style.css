@@ -220,7 +220,7 @@ hr {
     margin-bottom: 3.125rem
 }
 .post-title {
-    margin-top: 80px
+    margin-top: 50px
 }
 .post-date {
     color: #7A7B7C;
@@ -341,7 +341,6 @@ footer .menu-item a:hover {
     margin-bottom: 60px
 }
 .divider {
-    margin-bottom: -30px;
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1), rgba(0, 0, 0, 0))
