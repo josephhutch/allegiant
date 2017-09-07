@@ -161,12 +161,6 @@ pre {
     float: left
 }
 h1,
-h2,
-h3 {
-    letter-spacing: -.01em;
-    word-spacing: .02em
-}
-h1,
 h1 a,
 h2,
 h2 a,
@@ -398,6 +392,7 @@ input {
     display: none
 }
 .author-bio {
+    overflow: hidden;
     margin: 40px 0;
     width: 100%;
     border: 1px solid #D1D1D1;
@@ -411,6 +406,10 @@ input {
     margin-right: 1.2em;
     vertical-align: middle;
     float: left
+}
+.bio-name {
+    font-size: .9em;
+    margin: 0
 }
 .bio-text {
     font-size: .778em;
