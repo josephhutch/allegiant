@@ -65,7 +65,7 @@
 </div>
 <div class="clearfix"></div>
 <figure class="author-bio">
-{{ with .Site.Params.avatar }}<img class="bio-image" src="{{ .Site.BaseURL }}{{ . }}" />{{ end }}
+{{ with .Site.Params.avatar }}<img class="bio-image" src="{{ $.Site.BaseURL }}{{ . }}" />{{ end }}
 {{ with .Site.Params.name }}<h3 class="bio-name">{{ . }}</h3>{{ end }}
 {{ with .Site.Params.bio }}<figcaption class="bio-text">{{ . }}</figcaption>{{ end }}
 </figure>
