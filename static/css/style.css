@@ -17,13 +17,6 @@ footer {
 .overlay ul {
     list-style: none
 }
-#mainmenu,
-#mainmenu li,
-#site-title,
-.lower label,
-.overlay ul li a {
-    text-transform: uppercase
-}
 #nav-below,
 #nav-below a,
 .footer-column,
@@ -310,7 +303,7 @@ footer .menu-item a:hover {
     float: left
 }
 #site-title a {
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: #fff
 }
 #mainmenu {
@@ -318,6 +311,7 @@ footer .menu-item a:hover {
     float: right
 }
 #mainmenu a {
+    font-size: 1.2em;
     color: #fff
 }
 #mainmenu a:hover {
@@ -593,6 +587,9 @@ tr:nth-child(even) td {
     }
 }
 @media (max-width: 700px) {
+    #site-title a {
+        font-size: 1.2em
+    }
     .post-heading h1,
     h2 {
         font-size: 1.2em;
