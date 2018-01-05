@@ -17,10 +17,10 @@
 </head>
 <body>
 {{ if isset .Params "featuredimage" }}
-<header class="header" style="background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url({{ .Site.BaseURL }}{{.Params.featuredimage }}) 49.9% 49.9% / cover;" role="banner">
+<header class="header" style="background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url({{ .Site.BaseURL }}/{{.Params.featuredimage }}) 49.9% 49.9% / cover;" role="banner">
 {{"<!-- FeaturedImage. Otherwise show default //-->" | safeHTML}}
 {{ else if and (.IsNode) (isset .Site.Params "featuredimage") }}
-<header class="header" style="background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url({{ .Site.BaseURL }}{{.Site.Params.featuredimage }}) 49.9% 49.9% / cover;" role="banner">
+<header class="header" style="background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url({{ .Site.BaseURL }}/{{.Site.Params.featuredimage }}) 49.9% 49.9% / cover;" role="banner">
 {{ else }}
 <header class="header" style="background-color: #009DDC;
     background-image: url({{ .Site.BaseURL }}/img/texture.png),linear-gradient(to bottom, #009DDC, #006ccb);background-repeat: repeat, no-repeat;background-position: left top, left top;background-size: 100px 100px, 100% 100%;" role="banner">
