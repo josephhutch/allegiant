@@ -1,0 +1,43 @@
+{{ if isset .Params "featuredimage" }}
+<header class="header" style="background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url({{ .Site.BaseURL }}/{{.Params.featuredimage }}) 49.9% 49.9% / cover;" role="banner">
+{{ else if and (.IsNode) (isset .Site.Params "featuredimage") }}
+<header class="header" style="background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url({{ .Site.BaseURL }}/{{.Site.Params.featuredimage }}) 49.9% 49.9% / cover;" role="banner">
+{{ else }}
+<header class="header" style="background-color: #009DDC;
+  background-image: url({{ .Site.BaseURL }}/img/texture.png), linear-gradient(to bottom, #009DDC, #006ccb);
+  background-repeat: repeat, no-repeat;
+  background-position: left top, left top;
+  background-size: 100px 100px, 100% 100%;"
+  role="banner">
+{{ end }}
+  <section id="branding">
+    <div id="site-title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></div>
+    <nav id="mainmenu">
+      <ul>
+        <li><a href="{{ .Site.BaseURL }}">Blog</a></li>
+        {{ with .Site.Params.github }}<li><a href="{{ . }}" target="_blank">Github</a></li>{{ end }}
+        {{ with .Site.Params.twitter }}<li><a href="{{ . }}" target="_blank">Twitter</a></li>{{ end }}
+        {{ with .Site.Params.linkedin }}<li><a href="{{ . }}" target="_blank">LinkedIn</a></li>{{ end }}
+      </ul>
+    </nav>
+    <input type="checkbox" id="op">
+    <div class="lower">
+      <label for="op">Menu</label>
+    </div>
+    <div class="overlay overlay-hugeinc">
+      <label for="op"></label>
+      <nav id="menu" role="navigation">
+        <ul>
+          <li><a href="{{ .Site.BaseURL }}">Blog</a></li>
+          {{ with .Site.Params.github }}<li><a href="{{ . }}" target="_blank">Github</a></li>{{ end }}
+          {{ with .Site.Params.twitter }}<li><a href="{{ . }}" target="_blank">Twitter</a></li>{{ end }}
+          {{ with .Site.Params.linkedin }}<li><a href="{{ . }}" target="_blank">LinkedIn</a></li>{{ end }}
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <div class="post-heading">
+    <h1>{{ if and (.IsNode) (eq .Section "") }} Blog {{ else }} {{ .Title }} {{ end }}</h1>
+  </div>
+
+</header>

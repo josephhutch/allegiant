@@ -1,11 +1,14 @@
-{{ partial "header.html" . }}
-<section id="content" role="main">
-  {{ range $index, $page := .Paginator.Pages }}
-  {{ if ne $index 0 }}
-  {{ end }}
-  {{ .Render "li" }}
-  {{ end }}
-  {{ partial "pagination.html" .Paginator }}
-</section>
-{{ partial "footer.html" . }}
-
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" dir="ltr">
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "cover.html" . }}
+    <section id="content" role="main">
+      {{ range $index, $page := .Paginator.Pages }}
+      {{ .Render "li" }}
+      {{ end }}
+      {{ partial "pagination.html" .Paginator }}
+    </section>
+    {{ partial "footer.html" . }}
+  </body>
+</html>

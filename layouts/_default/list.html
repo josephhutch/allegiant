@@ -1,10 +1,15 @@
-{{ partial "header.html" . }}
-<section class="article-list">
-  <h1>{{ .Title }}</h1>
-  {{ range .Data.Pages }}
-  <hr/>
-  {{ .Render "li" }}
-  {{ end }}
-</section>
-{{ partial "footer.html" . }}
-
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" dir="ltr">
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "cover.html" . }}
+    <section class="article-list">
+      <h1>{{ .Title }}</h1>
+      {{ range .Data.Pages }}
+      <hr/>
+      {{ .Render "li" }}
+      {{ end }}
+    </section>
+    {{ partial "footer.html" . }}
+  </body>
+</html>
