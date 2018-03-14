@@ -3,12 +3,12 @@
   {{ partial "head.html" . }}
   <body>
     {{ partial "cover.html" . }}
-    <section class="article-list">
-      <h1>{{ .Title }}</h1>
-      {{ range .Data.Pages }}
-      <hr/>
-      {{ .Render "li" }}
-      {{ end }}
+    {{.Content}}
+    <section id="content" role="main" class="article-list">
+        {{ range $index, $page := .Paginator.Pages }}
+        {{ .Render "li" }}
+        {{ end }}
+        {{ partial "pagination.html" .Paginator }}
     </section>
     {{ partial "footer.html" . }}
   </body>
